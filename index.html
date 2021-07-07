@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikas Rai Final Project CloudNet Workshop</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            margin:0;
+        }
+
+        #header {
+            padding: 20px;
+        }
+
+        .header__title {
+            color: rgb(119, 132, 245);
+        }
+
+        .header__title1 {
+            color: rgb(255, 174, 74);
+        }
+
+        .header__logo {
+            font-size: 2.5rem;
+            color: rgb(80, 82, 214);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header__nav {
+            color: #FFF;
+        }
+
+        .nav__link {
+            color: rgb(99, 133, 255);
+            font-weight: 700;
+
+        }
+
+        #home {
+            background-color: #111;
+            width: 100%;
+            height: 250px;
+        }
+
+        .img {
+            width: 350px;
+            height: 460px;
+            border-radius: 50px;
+            border: 2px solid #FFF;
+
+        }
+
+        #about {
+            background-color: rgb(255, 255, 255);
+
+
+        }
+
+        .about__heading {
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            font-size: 2.5rem;
+            border-bottom: 4px solid black;
+        }
+
+        .bio {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+            margin: 100px;
+            width: 80%;
+            font-size: 1.8rem;
+            color: #111;
+            font-weight: 500;
+        }
+
+        #achievements {
+            width: 100%;
+        }
+
+        .achievements__heading {
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            font-size: 2.5rem;
+            border-bottom: 4px solid rgb(252, 252, 252);
+
+        }
+
+        .achievements ul>li {
+            margin: 15px;
+        }
+
+        .project__link {
+            text-decoration: none;
+            color: rgb(62, 107, 253);
+            background-color: rgb(255, 255, 255);
+            padding: 3px;
+            margin-left: 5px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #contact {
+            width: 100%;
+            background-color: #FFF;
+        }
+
+        .contact__heading {
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            font-size: 2.5rem;
+            border-bottom: 4px solid black;
+
+        }
+
+        .contact__label {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #111;
+
+        }
+
+        .contact__input {
+            width: 100%;
+            padding: 4px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 4px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+
+        #footer1 {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #111;
+            color: white;
+            padding-bottom: 10px;
+
+        }
+
+        .footer1__heading {
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .social__link {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 10px;
+
+
+        }
+
+        .social__btn {
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            margin: 5px;
+            background-color: rgb(253, 253, 253);
+            border: 2px solid #FFF;
+            border-radius: 6px;
+        }
+
+        .social__btn >a {
+            text-decoration: none;
+            list-style: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+        }
+        .social__btn:hover{
+            background-color:#0a66c2;
+        }
+
+        #footer2 {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            bottom:0px;
+        }
+        .footer2__heading {
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            margin:0 20px;
+        }
+        .footer2__top{
+            margin:0 20px;
+        }
+
+        .top__btn {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            margin: 0 20px;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 6px;
+        }
+
+        .top__btn>a {
+            text-decoration: none;
+            list-style: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header(start)-->
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" class="header__nav">
+        <tr>
+            <td>
+                <table border="0" cellpadding="" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td></td>
+
+                        <td>
+                            <font face="Comic sans MS" size="6">
+                                <b class="header__logo">Tech Analogy</b>
+                            </font>
+                        </td>
+
+                        <td width="15%"></td>
+
+                        <td>
+                            <a href="#home" style="text-decoration: none">
+                                <font face="Verdana" size="5" color="black" class="nav__link"> Home </font>
+                            </a>
+                        </td>
+
+                        <td>|</td>
+
+                        <td>
+                            <a href="#about" style="text-decoration: none">
+                                <font face="Verdana" size="5" color="black" class="nav__link"> About </font>
+                            </a>
+                        </td>
+
+                        <td>|</td>
+
+                        <td>
+                            <a href="#achievements" style="text-decoration: none">
+                                <font face="Verdana" size="5" color="black" class="nav__link">
+                                    Achievements
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>|</td>
+
+                        <td>
+                            <a href="#contact" style="text-decoration: none">
+                                <font face="Verdana" size="5" color="black" class="nav__link"> Contact Me</font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Header(end)-->
+
+    <!--Home(start)-->
+    <table id="home" cellpadding="" cellspacing="">
+        <tr>
+            <td>
+                <table cellpadding="" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3 class=>
+                                <font class="header__title" face="Times New Roman" size="6">
+                                    Hi Folks!
+                                    <h1 class="header__title1">I'm Vikas Rai.</h1>
+                                </font>
+                            </h3>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Home(end)-->
+
+    <!--About(start)-->
+    <table id="about">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="100" align="center" valign="middle" colspan="2">
+                            <font class="about__heading" face="Verdana" size="7" color="#57CC99"> About Me </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="20%">
+                            <img class="img" src="mypic.jpg" />
+                        </td>
+
+                        <td>
+                            <font class="bio" face="Verdana" size="4" color="white">
+                                I'm a Student at MAIT (Maharaja Agrasen Institute of Technology). I am currently in 2nd
+                                Year
+                                and pursuing B.Tech in Electrical & Electronics Engineering from MAIT and very much
+                                passionate
+                                for Programming and Web Development and now I am also very much interested in Cloud
+                                Computing.
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+
+        </tr>
+    </table>
+    <!--About(end)-->
+
+
+    <!--Achievement(start)-->
+    <table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="100" align="center" valign="middle">
+                            <font class="achievements__heading" face="Verdana" size="7" color="#4CAF50">
+                                Achievements
+
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font class="achievements" face="Verdana" size="4" color="white">
+                                <ul>
+                                    <li>
+                                        <b>Cloud Computing</b>
+                                        <ul>
+                                            <li>Participant at CloudNet Workshop organized by TechAnalogy.</li>
+                                            <li>
+                                                Learn About AWS Cloud computing and its different services like S3 ,AWS
+                                                Amplify , VPC , Dynamo DB.
+                                            </li>
+                                            <li>
+                                                Learned About DevOps using AWS Cloud Services.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <b>Web Development</b>
+                                        <ul>
+                                            <li>Html 5 ,CSS3 and JavaScript ReactJS ,NodeJS ,MongoDB </li>
+                                            <li>
+                                                Created a portfolio website using ReactJS for showcasing my skills.<a
+                                                    class="project__link"
+                                                    href="https://portfolio-vikas-rai.netlify.app/"
+                                                    target="_blank">Click to View</a>
+                                            </li>
+                                            <li>
+                                                Created a fullstack amazon clone website using ReactJS . <a
+                                                    class="project__link" href="https://amazon-clone3.vercel.app/"
+                                                    target="_blank">Click to View</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Add more roles here -->
+                                </ul>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Achievement(end)-->
+
+    <!--Contact(start)-->
+    <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                            <font class="contact__heading" face="Verdana" size="7" color="black"> Contact </font>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center">
+                                <tr>
+                                    <td width="30%">
+                                        <font class="contact__label" face="Verdana" size="4" color="#111">
+                                            Name
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#111">
+                                            <input class="contact__input" type="text" size="40" />
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font class="contact__label" face="Verdana" size="4" color="#111">
+                                            Email
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#111">
+                                            <input class="contact__input" type="email" size="40" />
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font class="contact__label" face="Verdana" size="4" color="#111">
+                                            Number
+                                        </font>
+                                    </td>
+                                    <td>
+                                        <font face="Verdana" size="4" color="#111">
+                                            <input class="contact__input" type="number" size="12" />
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font class="contact__label" face="Verdana" size="4" color="#111">
+                                            Message
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4" color="#111">
+                                            <textarea class="contact__input" rows="5" cols="37"> </textarea>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%"></td>
+                                    <td width="70%">
+                                        <button class="btn" type="Submit">
+                                            <font face="Verdana">
+                                                <b>Submit</b>
+                                            </font>
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Contact(end)-->
+
+    <!--Footer1(start)-->
+    <section id="footer1">
+        <div class="footer1__heading">
+            <h2>Let's Connect</h2>
+        </div>
+        <div class="social__link">
+            <div>
+                <button class="social__btn">
+                    <a href="https://www.linkedin.com/in/vikas-rai-7a5309202/" target="_blank">Linked In</a>
+                </button>
+            </div>
+            <div>
+
+                <button class="social__btn">
+                    <a href="https://github.com/raiv200" target="_blank">GitHub</a>
+                </button>
+            </div>
+            <div>
+
+                <button class="social__btn">
+                    <a href="mailto:raiv2004322@gmai.com" target="_blank">Email</a>
+                </button>
+            </div>
+
+    </section>
+    <!--Footer1(end)-->
+
+    <!--Footer2(start)-->
+    <section id="footer2">
+        <div class="footer2__heading">
+            <h2> © Copyright 2021 Vikas Rai .All Rights Reserved.</h2 </div>
+        </div>
+        <div class="footer2__top">
+            <button class="top__btn">
+                <a href="#">Back To Top</a>
+            </button>
+        </div>
+    </section>
+
+    <!--Footer2(end)-->
+</body>
+
+</html>
